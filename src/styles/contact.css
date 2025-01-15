@@ -1,0 +1,109 @@
+/* Styles specific to the Contact page */
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Main content wrapper */
+.contact-page main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+/* Formulaire */
+.contact-page form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Form Title */
+.contact-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Group for inputs */
+.contact-page .div-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-page .div-group p {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-page label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Inputs and Textarea */
+.contact-page input,
+.contact-page textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Textarea specifics */
+.contact-page textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+.contact-page button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-page button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-page form {
+        padding: 15px;
+    }
+
+    .contact-page input,
+    .contact-page textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-page button {
+        width: 100%;
+    }
+}

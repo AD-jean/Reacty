@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
 import Footer from '../components/Footer';
@@ -6,22 +6,34 @@ import Footer from '../components/Footer';
 const Contact = () => {
     return (    
       <div>    
-        <Logo/>
+        <Logo />
         <Navigation />  
-        <h1>Contactez-Nous</h1>
-          <from action="" method="post">
+        <main>
+          <h1>Contactez-nous</h1>
+          <form action="" method="post">
             <div className='div-group'>
               <p><em>Saisissez les Informations</em></p>
-              <label for='name'>FirstName:< input id='firstname' type='text' placeholder='FirstName' required/></label>
-              <label for='name'>LastName:< input id='lastname' type='text' placeholder='LastName' required/></label>
-              <label for='name'>Email:< input id='email' type='email' placeholder='Enter your email' required/></label>
+              <label htmlFor='firstname'>
+                Prénom:
+                <input id='firstname' type='text' placeholder='Prénom' required />
+              </label>
+              <label htmlFor='lastname'>
+                Nom de famille:
+                <input id='lastname' type='text' placeholder='Nom de famille' required />
+              </label>
+              <label htmlFor='email'>
+                Email:
+                <input id='email' type='email' placeholder='Entrez votre email' required />
+              </label>
             </div>
             <div className='div-group'>
-              <p><em>Comments</em></p>
-              <textarea name='' id='' cols={30} rows={3} placeholder='Comments ...'></textarea>
+              <p><em>Commentaires</em></p>
+              <textarea name='' id='' cols={30} rows={3} placeholder='Commentaires ...'></textarea>
             </div>
-          </from>
-          <Footer />
+            <button type="submit">Soumettre</button>
+          </form>
+        </main>
+        <Footer />
       </div>
     );
 };

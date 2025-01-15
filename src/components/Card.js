@@ -1,10 +1,13 @@
 import React from 'react';
 
-const Card = () => {
+const Card = ({country}) => {
+  console.log(country);
     return(
-      <div>
-        
-      </div>
+      <li className='card'>
+        <div className='infos'>
+          <h2>Nom du pays</h2>
+        </div>
+      </li>
     );
 };
 export default Card;

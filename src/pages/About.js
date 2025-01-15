@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../components/Logo";
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const About = () => {
     return (
@@ -20,6 +21,7 @@ const About = () => {
               I specialize in building intuitive user interfaces and efficient back-end solutions, ensuring that each project I work on is not only functional but also visually appealing. My approach is always user-centric, focusing on delivering a product that exceeds expectations. Whether working on a personal project or collaborating in a team, I am dedicated to producing high-quality code and meeting project deadlines.
               I believe that technology should be accessible to everyone, and I strive to contribute to projects that make a positive impact. Outside of coding, I enjoy exploring new frameworks, sharing knowledge with others, and keeping up with the latest trends in the tech industry. Feel free to reach out if you'd like to discuss potential projects or simply chat about web development!
             </p>
+            <Footer />
         </div>
     );
 };

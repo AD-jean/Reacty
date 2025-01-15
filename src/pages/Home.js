@@ -1,11 +1,14 @@
 import React from "react";
+import Countries from "../components/countries";
+import Logo from "../components/Logo";
 import Navigation from "../components/Navigation";
 
 const Home = () => {
     return (    
         <div>    
+            <Logo/>
             <Navigation />        
-            <h1>Home</h1>
+            <Countries/>
         </div>
     );
 };

@@ -1,0 +1,18 @@
+main {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%;
+    background-color: rgba(248, 245, 245, 0.5);
+    margin: 0;
+    padding: 0; /* Add padding for spacing */
+}
+
+.about-page p {
+    text-align: justify; /* Justify text */
+    margin: 10px 0; /* Add margin for spacing */
+    padding:0 30px 0 30px;
+}
+

@@ -1,41 +1,29 @@
 import React from 'react';
-
+import { FaFacebook, FaYoutube, FaTiktok } from 'react-icons/fa'; // Importing icons
+import '../styles/Footer.css';
 const Footer = () => {
-  return(
-    <>
-      <footer class="footer">
-        <div class="footer-top">
-          <div class="container">
-            <picture>
-              <a href="/" title="Accueil"><img src="/sites/emploi.tg/themes/africawork3/logo-footer-emploi.tg.svg" alt="Emploi.tg" /></a>
-            </picture>
-
-            <div class="footer-top-links">
-              <nav>
-                <ul class="menu"><li class="menu-2559 first"><a href="/qui-sommes-nous" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
-                  <li class="menu-2329"><a href="/plan-site" title="Plan du site">Plan du site</a></li>
-                  <li class="menu-2330 last"><a href="/contact">Contact</a></li>
-                </ul>
-              </nav>
-              <ul><a href="https://www.facebook.com/www.emploi.tg" class="facebook" target="_blank">
-                <img src="/sites/all/themes/africawork3/img/icon/facebook-white.svg" alt="facebook" /></a><a href="https://www.linkedin.com/groups/7059487" class="linkedin" target="_blank"><img src="/sites/all/themes/africawork3/img/icon/linkedin-white.svg" alt="linkedin" /></a></ul>
+    return (
+        <footer className="footer">
+            <div className="footer-content">
+                <h4>MISSION</h4>
+                <p>CONVENTION BAPTISTE DU TOGO</p>
+                <p>ASSOCIATION AGAPE</p>
+                <p>LOME-TOGO</p>
+                <p>Email: Info@Agape.org</p>
             </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-              <ul class="menu"><li class="menu-2562 first"><a href="/conditions-generales-utilisation" title="Conditions Générales d'Utilisation">Conditions Générales d'Utilisation</a></li>
-                <li class="menu-2558"><a href="/conditions-generales-vente-utilisation" title="Conditions Générales de Vente et d´Utilisation">Conditions Générales de Vente</a></li>
-                <li class="menu-2561"><a href="/mentions-legales" title="Mentions légales">Mentions légales</a></li>
-                <li class="menu-2560 last"><a href="/propriete-intellectuelle" title="Propriété Intellectuelle">Propriété Intellectuelle</a></li>
-              </ul>            
-              Copyright ©2025 Jeancking - Tous droits réservés 
+            <div className="social-media">
+                <h4>RÉSEAUX SOCIAUX</h4>
+                <div className="icons">
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+                    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
+                </div>
             </div>
-        </div>
-      </footer>
-    </>
-           
-      
-  );
+            <div className="copyright">
+                <p>Copyright © 2025 Jeanking - Tous droits réservés</p>
+            </div>
+        </footer>
+    );
 };
+
 export default Footer;

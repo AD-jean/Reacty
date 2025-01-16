@@ -6,9 +6,10 @@
     a {
       text-decoration: none;
       padding: 10px;
+      color: #fff;
 
       li {
-        color: $color-1;
+        color: #fff;
         transition: 0.2s;
         cursor: pointer;
 
@@ -25,7 +26,7 @@
         content: "";
         height: 4px;
         width: 0;
-        background: $color-1;
+        background: #f4c10f;
         position: absolute;
         border-radius: 10px;
         bottom: 0px;

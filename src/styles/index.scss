@@ -3,3 +3,19 @@
 @import "./components/logo";
 @import "./components/countries";
 @import "./components/card";
+
+#root {
+  display: flex;
+  flex-direction: column; /* Organise les enfants en colonne */
+  min-height: 100vh;
+}
+.footer {/* Fix the footer to the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+    color: white; /* Text color */
+     /* Center text */
+    padding: 10px 0; /* Padding for spacing */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+

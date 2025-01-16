@@ -1,0 +1,82 @@
+/* Style global pour assurer la compatibilité */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .footer {
+    background-color: #222; /* Couleur de fond sombre */
+    color: #fff; /* Couleur du texte */
+    display: flex;
+    flex-direction: column; /* Par défaut, en colonne pour les petits écrans */
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    text-align: center;
+  }
+  
+  .footer-content,
+  .social-media {
+    margin: 10px 0;
+  }
+  
+  /* Titre des sections */
+  .footer-content h4,
+  .social-media h4 {
+    font-size: 1.5rem;
+    color: #f4c10f; /* Couleur d'accent dorée */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Texte du footer */
+  .footer-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 5px 0;
+    color: #ddd;
+  }
+  
+  /* Section des réseaux sociaux */
+  .social-media .icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-media .icons a {
+    font-size: 2rem;
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .social-media .icons a:hover {
+    color: #f4c10f; /* Couleur d'accent */
+    transform: scale(1.2); /* Effet de zoom */
+  }
+  
+  /* Footer responsive */
+  @media (min-width: 768px) {
+    .footer {
+      flex-direction: row; /* Réorganise en ligne pour les grands écrans */
+      justify-content: space-around;
+      padding: 40px 40px;
+      text-align: left;
+    }
+  
+    .footer-content,
+    .social-media {
+      margin: 0;
+      max-width: 500px;
+    }
+  }
+  .copyright {
+    font-size: 16px; 
+    margin-top: 10px; 
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+}

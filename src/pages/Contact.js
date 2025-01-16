@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
+import '../styles/contact.css';
 import Footer from '../components/Footer';
 
 const Contact = () => {
@@ -8,33 +9,20 @@ const Contact = () => {
       <div>    
         <Logo />
         <Navigation />  
-        <main>
-          <h1>Contactez-nous</h1>
-          <form action="" method="post">
-            <div className='div-group'>
-              <p><em>Saisissez les Informations</em></p>
-              <label htmlFor='firstname'>
-                Prénom:
-                <input id='firstname' type='text' placeholder='Prénom' required />
-              </label>
-              <label htmlFor='lastname'>
-                Nom de famille:
-                <input id='lastname' type='text' placeholder='Nom de famille' required />
-              </label>
-              <label htmlFor='email'>
-                Email:
-                <input id='email' type='email' placeholder='Entrez votre email' required />
-              </label>
-            </div>
-            <div className='div-group'>
-              <p><em>Commentaires</em></p>
-              <textarea name='' id='' cols={30} rows={3} placeholder='Commentaires ...'></textarea>
-            </div>
-            <button type="submit">Soumettre</button>
+        <main className="contact-page">
+        <div className="contact-form-container">
+          <h2>Restez en contact avec Jeancking</h2>
+          <p>Inscrivez-vous pour recevoir les dernières nouvelles</p>
+          <form>
+            <input type="text" placeholder="Nom..." required />
+            <input type="text" placeholder="Prénom..." required />
+            <input type="email" placeholder="Email..." required />
+            <button type="submit">S'ABONNER</button>
           </form>
+        </div>
         </main>
-        
-      </div>
+      <Footer />
+    </div>
     );
 };
 

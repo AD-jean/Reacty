@@ -1,0 +1,79 @@
+/* Structure principale */
+main {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("https://via.placeholder.com/1920x1080") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparence sur le fond */
+  }
+  
+  .contact-form-container {
+    background-color: #333; /* Couleur du formulaire */
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  .contact-form-container h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+  }
+  
+  .contact-form-container p {
+    margin: 0 0 20px;
+    font-size: 0.9em;
+  }
+  
+  .contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .contact-form-container input:focus {
+    outline: none;
+    border: 2px solid #007bff;
+  }
+  
+  .contact-form-container button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: #f4c10f 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact-form-container button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  

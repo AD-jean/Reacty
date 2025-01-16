@@ -1,13 +1,26 @@
 import React from 'react';
 
 const Card = ({country}) => {
+  if (!country) {
+    return null; // or return a fallback UI
+  }
   console.log(country);
-    return(
-      <li className='card'>
+
+  return (
+    <li className='card'>
+      <div className='infos'>
+        <h2></h2>
+        <img src={country.flags.svg} 
+            alt={"drapeau" + country.translations.fra.common} 
+        />
         <div className='infos'>
-          <h2>Nom du pays</h2>
+          <h2>{country.translations.fra.common}</h2>
+          <h4>{country.capital}</h4>
+          <p>{country.population.toLocaleString('fr-FR')}</p>
         </div>
-      </li>
-    );
+      </div>
+    </li>
+  );
 };
+
 export default Card;

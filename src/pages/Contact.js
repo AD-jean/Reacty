@@ -33,7 +33,7 @@ const Contact = () => {
             <button type="submit">Soumettre</button>
           </form>
         </main>
-        <Footer />
+        
       </div>
     );
 };

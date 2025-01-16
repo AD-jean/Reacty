@@ -1,9 +1,6 @@
 import React from 'react';
 
 const Card = ({country}) => {
-  if (!country) {
-    return null; // or return a fallback UI
-  }
   console.log(country);
 
   return (
